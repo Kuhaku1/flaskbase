@@ -1,0 +1,15 @@
+#ide相关
+/.idea/
+/.vscode/
+#打包相关的临时文件
+/dist/
+/package/*.tar.gz
+/package/main.py
+/package/pip.conf
+/package/requirements.txt
+#一些临时文件
+package-lock.json
+*.pyc
+.version
+node_modules
+.pytest_cache

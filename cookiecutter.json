@@ -1,0 +1,8 @@
+{
+    "project_name": "demo-dev",
+    "package_name": "{{cookiecutter.project_name|replace('-','_')}}",
+    "registry_url": "",
+    "author": "Kuhaku1",
+    "git_url": "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_name}}",
+    "version_python": "3"
+}

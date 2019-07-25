@@ -1,0 +1,22 @@
+{
+    "name": "{{cookiecutter.package_name}}",
+    "version": "1.0.0",
+    "description": "{{cookiecutter.package_name}}",
+    "main": "index.js",
+    "scripts": {
+        "release": "standard-version",
+        "commit": "git-cz"
+    },
+    "author": "arvin",
+    "license": "ISC",
+    "devDependencies": {
+        "commitizen": "^2.10.1",
+        "cz-conventional-changelog": "^2.1.0",
+        "standard-version": "^4.4.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
