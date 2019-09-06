@@ -1,19 +1,15 @@
 # -*- coding:utf-8 -*-
 
 from flask import Flask
-from .config import Config
-from flask_sqlalchemy import SQLAlchemy
+from {{cookiecutter.package_name}}.config import Config
 
-db = SQLAlchemy()
+import {{cookiecutter.package_name}}.models
+# 初始化数据库表的注册
+
 app = Flask(__name__)
 
 # config
 app.config.from_object(Config)
-
-# init ext
-db.init_app(app)
-from .models import init_model
-init_model()
 
 # app router
 with app.app_context():
